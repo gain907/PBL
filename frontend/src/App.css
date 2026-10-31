@@ -1,0 +1,225 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* === 1단계: 업로드 화면 레이아웃 === */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.upload-icon-box {
+  margin-bottom: 20px;
+  color: #a0aec0;
+}
+
+.upload-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.upload-subtitle {
+  font-size: 0.875rem;
+  color: #a0aec0;
+  margin-bottom: 24px;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e53e5d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #d5304e;
+}
+
+/* === 2단계: 분석 화면 레이아웃 === */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.badge {
+  background-color: #ffe4e8;
+  color: #e53e5d;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.user-meta {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.date-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #e53e5d;
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: white;
+  border: 1px solid #cbd5e0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-outline.danger {
+  color: #e53e5d;
+  border-color: #feb2b2;
+}
+
+/* 카드 공통 스타일 */
+.card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.status-badge {
+  background-color: #f7fafc;
+  color: #718096;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  border: 1px solid #e2e8f0;
+}
+
+.status-badge.active {
+  background-color: #e6fffa;
+  color: #319795;
+  border-color: #b2f5ea;
+}
+
+.file-name {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 12px;
+}
+
+.audio-player {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.card-footer-text {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.placeholder-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  color: #a0aec0;
+  font-size: 0.95rem;
+}
+
+.result-text {
+  line-height: 1.6;
+  color: #2d3748;
+}
+
+.speaker-row {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.speaker-name {
+  font-weight: bold;
+  color: #2b6cb0;
+  margin-right: 8px;
+}
